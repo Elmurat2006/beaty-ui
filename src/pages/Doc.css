@@ -1,0 +1,33 @@
+.installation {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+body {
+  background-color: #0a1929;
+}
+.linkTag-color {
+  color: #c17787;
+}
+.attr-name {
+  color: #a6e22e;
+}
+.token.punctuation {
+  color: #f8f8f2;
+}
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.className-name {
+  color: #e6db74;
+}
+code[className*="language-"] {
+  color: #f8f8f2;
+  background: none;
+  text-shadow: 0 1px rgb(0 0 0 / 30%);
+  font-size: 1em;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+}
