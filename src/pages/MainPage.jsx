@@ -1,11 +1,7 @@
 import { Button } from "../components/Button/Button";
 import React from "react";
 import { Link } from "react-router-dom";
-import Calendar from "../components/Calendar/Calendar";
 import "./MainPage.css";
-import CardPost from "../components/CardPost/CardPost";
-import Buttons from "../components/Buttons/Buttons";
-import Inputs from "../components/Inputs/Inputs";
 import Vscode from "../assets/vscode-dev.png";
 const MainPage = () => {
   return (
@@ -13,8 +9,8 @@ const MainPage = () => {
       <div className="main_page mt-5">
         <div className="firstPage mb-5 d-flex">
           <div className="left-block d-flex flex-column">
-            <h1 className="text-white mt-3 h1-text">
-              <span className="text-blue ">Move faster </span>
+            <h1 className="text-white mt-36 h1-text">
+              <span className="text-blue">Move faster </span>
               with intuitive React UI tools
             </h1>
             <p className="text-white p-text my-3">
@@ -23,36 +19,22 @@ const MainPage = () => {
               component library, or bring your own design system to our
               production-ready components.
             </p>
-            <div className="d-flex ">
-              <Link to="/doc">
+            <div className="d-flex gap-2 flex-wrap ">
+              <Link to="/doc" className="btn-adaptive">
                 <button className="border-none d-flex align-items-center">
-                  <Button className="btn--large ">
+                  <Button className="btn--large  ">
                     Get Started
                     <span></span>
                   </Button>
                 </button>
               </Link>
-              <button className="buttonGlobal ms-4 fw-normal installBtn mb-5">
-                <span>npm install beaty ui</span>
+              <button className="buttonGlobal  fw-normal installBtn mb-5">
+                <span>npm install beaty-ui-library</span>
               </button>
             </div>
           </div>
-          <div className="img-vscode">
-            <img src={Vscode} className="ms-5 " alt="" width="800" />
-          </div>
-        </div>
-
-        <div className="products container-fluid mt-5">
-          <div className="secondPage-leftBlock">
-            <h2 className="text-blue fw-700 fs-8rem ">Products</h2>
-            <h2 className="text-white fw-800 fs-def mx-500">
-              Every component you need is{" "}
-              <span className="text-blue">ready for production</span>
-            </h2>
-            <p className="text-white p-text ">
-              Build at an accelerated pace without sacrificing flexibility or
-              control.
-            </p>
+          <div className="img-vscode imgNone ">
+            <img src={Vscode} className="ms-5 imgNone  " alt="" width="900" />
           </div>
         </div>
       </div>

@@ -8,11 +8,10 @@ import MainPage from './pages/MainPage';
 import Footer from './components/Footer';
 import SignUp from './pages/Sign/SignUp';
 import SingIn from './pages/Sign/SingIn';
-
+import Templates from './pages/Templates';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './global.css'
-import Templates from './pages/Templates';
 
 
 const App = () => {
@@ -23,6 +22,9 @@ const App = () => {
       <Routes>
         <Route path='/' element={<MainPage />} />
         <Route path='/doc' element={<Doc />} />
+        			{/* <Route path='/profile' element={<PrivateRoute />}>
+						<Route path='/profile' element={<Profile />} />
+					</Route> */}
         <Route path='/templates' element={<Templates />} />
         <Route path='/about' element={<About />} />
         <Route path='/sign-up' element={<SignUp />} />
